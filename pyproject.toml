@@ -1,0 +1,23 @@
+[[tool.poetry.source]]
+priority = "default" # `default = true` if you are on a Poetry version before 1.5
+name = "bendingspoons-proxy"
+url = "https://proxy.registry.bendingspoons.com/pypi/simple"
+
+[tool.black]
+line-length = 100
+exclude = '''
+(
+    \.eggs |
+    \.git |
+    \.githooks |
+    \.idea |
+    \.mypy_cache |
+    \.?venv |
+    \.vscode |
+    build |
+    dist |
+    node_modules
+)
+'''
+
+[tool.isort]
